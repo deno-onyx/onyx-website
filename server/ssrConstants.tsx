@@ -2,6 +2,7 @@ import { React, ReactDOMServer } from '../deps.ts';
 
 import App from '../views/App.tsx';
 import NavBar from '../views/components/NavBar.tsx'
+import MainContainer from '../views/components/MainContainer.tsx'
 
 // CONSTANTS NECESSARY FOR SERVER-SIDE RENDERING
 
@@ -18,6 +19,7 @@ const html: string = `<html><head><script type="module" src="${hydratePath}"></s
 const js: string = `import React from "https://dev.jspm.io/react@16.14.0";
 \nimport ReactDOM from "https://dev.jspm.io/react-dom@16.14.0";
 \nconst NavBar = ${NavBar};
+\nconst MainContainer = ${MainContainer};
 \nReactDOM.hydrate(React.createElement(${App}), document.getElementById("root"));`;
 
 export { html, js, hydratePath };

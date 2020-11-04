@@ -7,15 +7,13 @@ const MainContainer = (props: any) => {
 
             </div>
         )
-    }
-    else if (props.page === "strategies") {
+    } else if (props.page === "strategies") {
         return (
             <div id="strategies">
 
             </div>
         )
-    }
-    else if (props.page === "docs") {
+    } else if (props.page === "docs") {
         return (
             <div id="docs">
 

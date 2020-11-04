@@ -18,14 +18,13 @@ declare global {
 }
 
 const App = () => {
-
-const [page, setPage] = (React as any).useState("home")
-  return (
-    <div id="app">
-      <NavBar setPage={setPage}/>
-      <MainContainer page={page} />
-    </div>
-  );
+  const [page, setPage] = (React as any).useState("home")
+    return (
+      <div id="app">
+        <NavBar setPage={setPage}/>
+        <MainContainer page={page} />
+      </div>
+    );
 };
 
 export default App;
