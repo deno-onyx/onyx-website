@@ -1,3 +1,74 @@
-#whatever {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  background-color: #191919;
+  margin: 0;
+}
+
+#app {
+ display: grid;
+ grid-template-columns: 250px 4fr;
+ height: 100%;
+ color: white;
+}
+
+.navBar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid white;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.buttons {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 12px;
+  padding-top: 10px;
+  border: 2.2px solid white;
+  border-radius: 17px;
+  font-size: 16pt;
+  color: white;
+  width: 150px;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: white;
+  color: black;
+}
+
+#home {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#homeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  font-size: 10pt;
+  border-top: 1px solid white;
+  position: absolute;
+  bottom: 3px;
+}
+
+#developedBy {
+  font-weight: bold;
 }

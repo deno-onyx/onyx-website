@@ -16,6 +16,9 @@ declare global {
       header: any;
       footer: any;
       a: any;
+      span: any;
+      strong: any;
+      b: any;
     }
   }
 }

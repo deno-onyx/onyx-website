@@ -5,6 +5,7 @@ import NavBar from '../views/components/NavBar.tsx';
 import MainContainer from '../views/components/MainContainer.tsx';
 import Home from '../views/components/Home.tsx';
 import Strategies from '../views/components/Strategies.tsx';
+import Docs from '../views/components/Docs.tsx';
 
 // CONSTANTS NECESSARY FOR SERVER-SIDE RENDERING
 
@@ -20,6 +21,7 @@ const html: string = `<html><head><script type="module" src="${hydratePath}"></s
 // (Remember to add every new React component here, since this is unbundled!)  
 const js: string = `import React from "https://dev.jspm.io/react@16.14.0";
 \nimport ReactDOM from "https://dev.jspm.io/react-dom@16.14.0";
+\nconst Docs = ${Docs};
 \nconst Strategies = ${Strategies};
 \nconst Home = ${Home};
 \nconst NavBar = ${NavBar};
