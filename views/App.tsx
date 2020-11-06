@@ -7,9 +7,6 @@ import MainContainer from './components/MainContainer.tsx'
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      button: any;
-      img: any;
-      input: any;
       div: any;
       h1: any;
       p: any;
@@ -17,8 +14,8 @@ declare global {
       footer: any;
       a: any;
       span: any;
-      strong: any;
-      b: any;
+      h2: any;
+      h3: any;
     }
   }
 }

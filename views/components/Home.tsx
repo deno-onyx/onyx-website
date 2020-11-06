@@ -2,10 +2,10 @@ import { React } from '../../deps.ts';
 
 const Home = () => {
   return (
-    <div id="homeDiv">
-      <header id="onyxLogo">Onyx</header>
+    <div className="parentDivs">
+      <header id="onyxLogo"></header>
       <div id='intro'>
-         <p>This is where we explain what Onyx does.</p>
+         <h2>Modular authentication middleware for Deno and Oak</h2>
       </div>
       {/* <img ></img> */}
     </div>
