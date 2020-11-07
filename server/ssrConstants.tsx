@@ -6,6 +6,7 @@ import MainContainer from '../views/components/MainContainer.tsx';
 import Home from '../views/components/Home.tsx';
 import Strategies from '../views/components/Strategies.tsx';
 import Docs from '../views/components/Docs.tsx';
+import LinkBar from '../views/components/LinkBar.tsx'
 
 // CONSTANTS NECESSARY FOR SERVER-SIDE RENDERING
 
@@ -13,7 +14,7 @@ import Docs from '../views/components/Docs.tsx';
 const hydratePath: string = '/hydration.js';
 
 // Static HTML -- includes references to hydration script and CSS stylesheet
-const html: string = `<html><head><script type="module" src="${hydratePath}"></script><link rel="stylesheet" href="styles.css" type="text/css"></head><body><div id="root">${(ReactDOMServer as any).renderToString(
+const html: string = `<html lang="en"><head><script type="module" src="${hydratePath}"></script><link rel="stylesheet" href="styles.css" type="text/css"><title>Onyx - Authentication Middleware for Deno</title></head><body><div id="root">${(ReactDOMServer as any).renderToString(
     <App />
   )}</div></body></html>`;
   
@@ -26,6 +27,7 @@ const js: string = `import React from "https://dev.jspm.io/react@16.14.0";
 \nconst Home = ${Home};
 \nconst NavBar = ${NavBar};
 \nconst MainContainer = ${MainContainer};
+\nconst LinkBar = ${LinkBar};
 \nReactDOM.hydrate(React.createElement(${App}), document.getElementById("root"));`;
 
 export { html, js, hydratePath };
