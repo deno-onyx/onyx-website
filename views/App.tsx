@@ -16,6 +16,9 @@ declare global {
       span: any;
       h2: any;
       h3: any;
+      svg: any;
+      path: any;
+      br: any;
     }
   }
 }

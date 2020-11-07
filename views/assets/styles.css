@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
-  background-image: url('https://i.imgur.com/8aE2war.jpg');
-  background-position: center top;
+  background-image: url('https://i.imgur.com/Be896VL.jpg');
+  background-position: top left;
   background-repeat: no-repeat;
-  background-size: 2250px auto;
+  background-size: 2000px auto;
 
-  /* background-color: #191919; */
-
-  /* background: rgb(205,205,205);
-  background: linear-gradient(151deg, rgba(205,205,205,1) 0%, rgba(77,77,77,1) 40%, rgba(0,0,0,1) 99%); */
   margin: 0;
 }
 
 #app {
  display: grid;
- grid-template-columns: 250px 4fr;
+ grid-template-columns: 300px 4fr;
  height: 100%;
  color: white;
  font-family: 'Montserrat', sans-serif;
@@ -23,78 +19,113 @@ body {
 
 /* Navigation bar */
 
-.navBar{
+.navBar {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  border-right: 1px solid white;
+  border-right: 3px solid #8200B7;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #logo {
-  height: 200px;
+  height: 90px;
   width: 100%;
   background-image: url('https://i.imgur.com/ALQnrfR.png');
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150px auto;
-  /* background-color: white; */
+  background-repeat: no-repeat; 
+  background-size: 90px auto;
 }
 
 .buttonDiv {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  border-top: 1px solid white;
-  padding-top: 40px;
   width: 100%;
+  padding-bottom: 200px;
 }
 
 .buttons {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 13px;
+  margin-bottom: 13px;
   padding-bottom: 12px;
-  padding-top: 10px;
+  padding-top: 12px;
   border: 2.2px solid white;
-  border-radius: 17px;
+  border-radius: 40px;
   font-size: 16pt;
-  color: white;
-  width: 150px;
+  color: #8200B7;
+  width: 175px;
   text-align: center;
-  transition: background-color 0.3s;
+  background-color:rgba(255, 255, 255, 1);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 1);
   cursor: pointer;
+
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+  transition: border 0.3s;
+  transition: box-shadow 0s;
 }
 
 .buttons:hover {
-  background-color: #390459;
+  background-color:rgba(255, 255, 255, 0);
+  color: white;
+  border: 2.2px solid #8200B7;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0);
 }
 
 footer {
-  /* background-color: white; */
   color: white;
   font-size: 9pt;
-  border-top: 1px solid white;
-  position: absolute;
-  bottom: 0;
-  padding: 5px;
+  width: 185px;
 }
 
 #developedBy {
   font-weight: bold;
 }
 
-/* 'Home' component */
-
-#home {
-  font-family: 'Montserrat', sans-serif;
+/* 'Main Container' component */
+#mainContainer {
+  display: flex;
+  flex-direction: column;
 }
 
+/* 'Link Bar' component */
+
+#linkDiv {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.linkLogos {
+  height: 2.5em;
+  width: 2.5em;
+  padding-top: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#deno {
+  margin-top: 3px;
+  margin-right: 20px;
+}
+
+/* 'Home' component */
+
 #onyxLogo {
-  background-image: url('https://i.imgur.com/GYa3pSb.png');
+  background-image: url('https://i.imgur.com/SpM2LDB.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 250px auto;
   height: 100px;
   width: 300px;
+  
+  padding-bottom: 40px;
+  animation: fadeIn 2s;
 }
 
 .parentDivs {
@@ -103,12 +134,48 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100%;
+
 }
 
 #intro {
-  padding-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  padding-bottom: 50px;
 }
 
+#subtitle {
+  font-weight: bold;
+  font-size: 20pt;
+  animation: fadeIn 2s;
+}
+
+#description {
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 18pt;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.homeLinks {
+  font-weight: bold;
+}
+
+.homeLinks:visited {
+  color: white;
+}
+
+.homeLinks:hover {
+  color: #8200B7;
+  text-decoration: underline;
+}
 /* 'Strategies' component */
 
 #strategyContainer {
@@ -123,7 +190,6 @@ footer {
   border: 1px solid white;
   border-radius: 14px;
   color: white;
-  text-decoration: none;
   transition: box-shadow 0.3s;
 
   display: flex;
@@ -136,9 +202,12 @@ footer {
 box-shadow: 0 0 8px white;
 }
 
-
 .strategy:visited {
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* 'Docs' component */
