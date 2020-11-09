@@ -19,6 +19,7 @@ declare global {
       svg: any;
       path: any;
       br: any;
+      i: any;
     }
   }
 }

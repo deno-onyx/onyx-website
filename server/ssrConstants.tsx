@@ -8,6 +8,9 @@ import Strategies from '../views/components/Strategies.tsx';
 import Docs from '../views/components/Docs.tsx';
 import LinkBar from '../views/components/LinkBar.tsx'
 
+import Overview from '../views/assets/writing/Overview.tsx';
+// import { CodeBlock } from '../deps.ts';
+
 // CONSTANTS NECESSARY FOR SERVER-SIDE RENDERING
 
 // Endpoint that will reference the 'js' string and hydrate the static files with React
@@ -28,6 +31,7 @@ const js: string = `import React from "https://dev.jspm.io/react@16.14.0";
 \nconst NavBar = ${NavBar};
 \nconst MainContainer = ${MainContainer};
 \nconst LinkBar = ${LinkBar};
+\nconst Overview = ${Overview};
 \nReactDOM.hydrate(React.createElement(${App}), document.getElementById("root"));`;
 
 export { html, js, hydratePath };
