@@ -142,7 +142,7 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 700px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 #subtitle {
@@ -156,6 +156,11 @@ footer {
   line-height: 30px;
   font-weight: 300;
   font-size: 18pt;
+  animation: fadeIn 2s;
+}
+
+#started {
+  margin-bottom: 40px;
   animation: fadeIn 2s;
 }
 
@@ -176,6 +181,9 @@ footer {
   color: #8200B7;
   text-decoration: underline;
 }
+
+
+
 /* 'Strategies' component */
 
 #strategyContainer {
