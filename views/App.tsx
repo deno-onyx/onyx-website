@@ -20,6 +20,10 @@ declare global {
       path: any;
       br: any;
       i: any;
+      code: any;
+      b: any;
+      img: any;
+      script: any;
     }
   }
 }

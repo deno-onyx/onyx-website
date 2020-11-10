@@ -9,7 +9,8 @@ import Docs from '../views/components/Docs.tsx';
 import LinkBar from '../views/components/LinkBar.tsx'
 
 import Overview from '../views/assets/writing/Overview.tsx';
-// import { CodeBlock } from '../deps.ts';
+import Middleware from "../views/assets/writing/Middleware.tsx";
+// import { CodeBlock, tomorrow } from '../deps.ts';
 
 // CONSTANTS NECESSARY FOR SERVER-SIDE RENDERING
 
@@ -32,6 +33,7 @@ const js: string = `import React from "https://dev.jspm.io/react@16.14.0";
 \nconst MainContainer = ${MainContainer};
 \nconst LinkBar = ${LinkBar};
 \nconst Overview = ${Overview};
+\nconst Middleware = ${Middleware};
 \nReactDOM.hydrate(React.createElement(${App}), document.getElementById("root"));`;
 
 export { html, js, hydratePath };
