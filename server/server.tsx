@@ -2,7 +2,6 @@
 import { Application, send, join, log } from '../deps.ts';
 
 // Frontend dependencies
-import { React, ReactDOMServer } from '../deps.ts';
 import { js, html, hydratePath } from './ssrConstants.tsx';
 
 const port: number = Number(Deno.env.get('PORT')) || 8080;
@@ -14,7 +13,7 @@ app.use(async (ctx) => {
 
   // Server-Side Rendering -- References to HTML, CSS and JS Hydration found in /server/ssrConstants.tsx
   if (filePath === '/') {
-    ctx.response.type = `text/html`;
+    ctx.response.type = 'text/html';
     ctx.response.body = html;
   } else if (filePath === hydratePath) {
     ctx.response.type = 'application/javascript';

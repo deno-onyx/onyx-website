@@ -90,6 +90,7 @@ footer {
 #mainContainer {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 /* 'Link Bar' component */
@@ -104,7 +105,7 @@ footer {
 .linkLogos {
   height: 2.5em;
   width: 2.5em;
-  padding-top: 20px;
+  padding-top: 45px;
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -133,8 +134,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-
+  height: 650px;
 }
 
 #intro {
@@ -221,6 +221,8 @@ a {
 /* 'Docs' component */
 
 #docsContainer {
-  padding-bottom: 400px;
+  padding-right: 25px;
   width: 700px;
+  height: 100%;
+  overflow-y: scroll;
 }
