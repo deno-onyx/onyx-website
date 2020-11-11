@@ -14,7 +14,7 @@ docker push 605676317945.dkr.ecr.us-east-1.amazonaws.com/onyx:$TRAVIS_COMMIT
 # Use the linux sed command to replace the text '<VERSION>' in our Dockerrun file with the Travis-CI SHA key
 sed -i='' "s/<VERSION>/$TRAVIS_COMMIT/" Dockerrun.aws.json
 # Zip up our codebase, along with modified Dockerrun and our .ebextensions directory
-zip -r onyx-prod-deploy.zip Dockerrun.aws.json .ebextensions
+zip -r onyx-prod-deploy.zip Dockerrun.aws.json
 # Upload zip file to s3 bucket
 aws s3 cp onyx-prod-deploy.zip s3://$EB_BUCKET/onyx-prod-deploy.zip
 # Create a new application version with new Dockerrun
