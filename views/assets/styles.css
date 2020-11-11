@@ -7,7 +7,7 @@ body {
   /* background-size: 2000px auto; */
   /* background-size: auto; */
   background-size: cover;
-  height: 100%;
+  height: 120%;
   overflow: hidden;
 
   /* background-color: blue; */
@@ -234,6 +234,22 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+
+  html {
+    height: auto;
+  }
+  /* body {
+    height: 50vh;
+  } */
+
+  #app {
+    display: grid;
+    grid-template-columns: 300px 4fr;
+    height: 25%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+   }
+
   .buttonDiv {
     position: absolute;
     margin-top: 10em;
