@@ -18,6 +18,6 @@ zip -r onyx-prod-deploy.zip Dockerrun.aws.json
 # Upload zip file to s3 bucket
 aws s3 cp onyx-prod-deploy.zip s3://$EB_BUCKET/onyx-prod-deploy.zip
 # Create a new application version with new Dockerrun
-aws elasticbeanstalk create-application-version --application-name Onyx Website --version-label onyx-website --source-bundle S3Bucket=$EB_BUCKET,S3Key=onyx-prod-deploy.zip
+aws elasticbeanstalk create-application-version --application-name onyx-website --version-label $TRAVIS_COMMIT --source-bundle S3Bucket=$EB_BUCKET,S3Key=onyx-prod-deploy.zip
 # Update environment to use new version number
-aws elasticbeanstalk update-environment --environment-name OnyxWebsite-env-1 --version-label onyx-website
+aws elasticbeanstalk update-environment --environment-name OnyxWebsite-env --version-label $TRAVIS_COMMIT
