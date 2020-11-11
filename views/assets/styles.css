@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
-  /* background-image: url('https://i.imgur.com/Be896VL.jpg');
+  background-image: url('https://i.imgur.com/Be896VL.jpg');
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 2000px auto; */
+  /* background-size: 2000px auto; */
+  /* background-size: auto; */
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
 
-  background-color: blue;
+  /* background-color: blue; */
 
   margin: 0;
 }
@@ -227,4 +231,16 @@ a {
   width: 700px;
   height: 100%;
   overflow-y: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .buttonDiv {
+    position: absolute;
+    margin-top: 10em;
+  }
+
+  #intro {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
 }
