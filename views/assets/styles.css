@@ -242,7 +242,7 @@ a {
 
 #docsContainer {
   padding-right: 25px;
-  width: 700px;
+  width: 800px;
   height: 100%;
   overflow-y: scroll;
   margin-bottom: 40px;
@@ -260,31 +260,3 @@ code {
 .funcCode {
   color: yellow;
 }
-
-/* @media only screen and (min-width: 768px) {
-
-  html {
-    height: auto;
-  }
-  /* body {
-    height: 50vh;
-  } */
-
-  /* #app {
-    display: grid;
-    grid-template-columns: 300px 4fr;
-    height: 25%;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-   }
-
-  .buttonDiv {
-    position: absolute;
-    margin-top: 10em;
-  }
-
-  #intro {
-    margin-left: 4em;
-    margin-right: 4em;
-  } 
-} */ 
