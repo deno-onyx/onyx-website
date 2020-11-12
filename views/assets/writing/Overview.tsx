@@ -8,6 +8,7 @@ const Overview = () => {
             <p>Onyx's primary concern is keeping code clean and organized. 
                 Through the use of specialized instructions called <i>strategies</i>, which are held in individual modules, you can streamline your authentication process without importing unnecessary dependencies.</p>
             <p>All you need is one line to get started.</p>
+            <img alt='An example of an import line' src='https://i.imgur.com/xahFyb4.png'></img>
         </div>
     )
 }
