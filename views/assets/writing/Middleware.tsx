@@ -12,7 +12,7 @@ const Middleware = () => {
             <p>Before doing anything else, it's important to import the authentication strategies you want to use in your application. 
               These strategies are available in the Strategies tab.</p> 
               <p>For example, importing in the local strategy looks like this.</p>
-            <img id='importExample' alt='Importing a strategy' src='https://i.imgur.com/B67ZUZq.png'></img>
+            <img id='importExample' alt='Importing a strategy' src='https://i.imgur.com/n9NMc4t.png'></img>
             <p>Next, let's go over Onyx's most vital methods: <code><span id='onyxCode'>onyx</span>.<span className='funcCode'>use()</span></code>, <code><span id='onyxCode'>onyx</span>.<span className='funcCode'>authenticate()</span></code> and <code><span id='onyxCode'>onyx</span>.<span className='funcCode'>initialize()</span></code>.</p>
           </div>
           <div id='use'>
