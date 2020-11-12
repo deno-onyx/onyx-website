@@ -5,7 +5,7 @@ const Strategies = () => {
         <div className="parentDivs">
           <div className='stratIntro'>
           <h1 className="headers">Strategies</h1>
-          <p>Click the strategy you want to use to copy the <code>import</code> line needed to use the ES module.
+          <p>Click a strategy to copy the <code>import</code> line needed to use the ES module.
           More strategies will appear here as they are developed. Feel free to create your own strategy and make a pull request to the Onyx repo!</p>
           </div>
           <div id="strategyContainer">
