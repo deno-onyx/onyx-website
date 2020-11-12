@@ -1,9 +1,6 @@
 import { React } from '../../deps.ts';
 
 const NavBar = (props: any) => {
-  const credits =
-    "Connie Cho, Alice Fu, Chris Kopcow, George Kruchinina and Cedric Lee";
-
   return(
       <div className='navBar'>
         <div id='logo'></div>
@@ -16,12 +13,4 @@ const NavBar = (props: any) => {
       </div>
   )
 }
-
-// <a href="https://github.com/leeced94" target="_blank">Cedric Lee</a>
-
-// https://github.com/leeced94
-// https://github.com/alicejfu
-// https://github.com/opennoise1
-// https://github.com/gkruchin
-// https://github.com/chcho2
 export default NavBar;
