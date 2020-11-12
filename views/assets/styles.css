@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
   background-image: url('https://i.imgur.com/Be896VL.jpg');
   background-position: top left;
   background-repeat: no-repeat;
-  /* background-size: 2000px auto; */
-  /* background-size: auto; */
-  background-size: cover;
-  height: 120%;
-  overflow: hidden;
-
-  /* background-color: blue; */
+  background-size: 2000px auto;
 
   margin: 0;
 }
@@ -88,6 +82,19 @@ footer {
   width: 185px;
 }
 
+.githubs{
+  color: white;
+}
+
+.githubs:visited {
+  color: white;
+}
+
+.githubs:hover{
+  color: #8200B7;
+  text-decoration: underline;
+}
+
 #developedBy {
   font-weight: bold;
 }
@@ -132,7 +139,6 @@ footer {
   width: 300px;
   
   padding-bottom: 40px;
-  animation: fadeIn 2s;
 }
 
 .parentDivs {
@@ -141,6 +147,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 650px;
+  animation: fadeIn 1.5s;
 }
 
 #intro {
@@ -154,7 +161,6 @@ footer {
 #subtitle {
   font-weight: bold;
   font-size: 20pt;
-  animation: fadeIn 2s;
 }
 
 #description {
@@ -162,12 +168,10 @@ footer {
   line-height: 30px;
   font-weight: 300;
   font-size: 18pt;
-  animation: fadeIn 2s;
 }
 
 #started {
   margin-bottom: 40px;
-  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -195,7 +199,12 @@ footer {
 #strategyContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 400px;
+  padding-bottom: 300px;
+}
+
+.stratIntro {
+  width: 700px;
+  text-align: center;
 }
 
 .strategy {
@@ -224,6 +233,11 @@ a {
   text-decoration: none;
 }
 
+.stratName {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
 /* 'Docs' component */
 
 #docsContainer {
@@ -231,9 +245,23 @@ a {
   width: 700px;
   height: 100%;
   overflow-y: scroll;
+  margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) {
+code {
+  font-size: 11pt;
+  background-color: #575757;
+}
+
+#onyxCode {
+  color: #da8efa;
+}
+
+.funcCode {
+  color: yellow;
+}
+
+/* @media only screen and (min-width: 768px) {
 
   html {
     height: auto;
@@ -242,7 +270,7 @@ a {
     height: 50vh;
   } */
 
-  #app {
+  /* #app {
     display: grid;
     grid-template-columns: 300px 4fr;
     height: 25%;
@@ -258,5 +286,5 @@ a {
   #intro {
     margin-left: 4em;
     margin-right: 4em;
-  }
-}
+  } 
+} */ 
