@@ -5,7 +5,7 @@ const Strategies = () => {
         <div className="parentDivs">
           <div className='stratIntro'>
           <h1 className="headers">Strategies</h1>
-          <p>Click a strategy to copy the <code>import</code> line needed to use the ES module.
+          <p>Each strategy links to where it lives on Deno.land. Please use the URL in your <code>import</code> line to use the ES module.
           More strategies will appear here as they are developed. Feel free to create your own strategy and make a pull request to the Onyx repo!</p>
           </div>
           <div id="strategyContainer">
