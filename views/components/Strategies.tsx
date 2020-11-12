@@ -11,7 +11,7 @@ const Strategies = () => {
           <div id="strategyContainer">
               <a
                 className="strategy" 
-                href='https://deno.land/x/onyx@v1.0/src/strategies/local-strategy/local-strategy.ts'
+                href='https://deno.land/x/onyx/src/strategies/local-strategy/local-strategy.ts'
                 target='_blank'>
                   <span className='stratName'>Local Strategy</span>
                   <p className='stratDescript'>Local authentication strategy for Onyx</p>
