@@ -4,10 +4,10 @@ const Middleware = () => {
     return (
         <div className='middleContainer'>
           <div id='middleIntro'>
-            <p>When you import the Onyx module, what you're really importing is an object called 'Onyx' that has a number of built-in methods. 
-                A couple of those methods you will need to use as Oak middleware to use Onyx. 
-                Others are primarily used by Onyx under the hood to assist with the authentication process. 
-                However, if you are a developer interested in creating new or custom strategies for Onyx, it will likely be important to understand how these work.</p> 
+            <p>When you import the Onyx module, what you're really importing is an instance of 'Onyx' that has a number of built-in methods. 
+              While some of these methods you will invoke yourself, others are primarily used by Onyx under the hood to assist with the authentication process. 
+              However, if you are a developer interested in creating new or custom strategies for Onyx, it will likely be important to understand how these work.</p>
+            <p>By the way, you will need to use the Oak framework for Deno to use Onyx. Additionally, you will need to set up the <a id='sessionLink' href='https://deno.land/x/session@1.1.0'>session module</a> on the server to use persistent sessions with Onyx.</p> 
             <h2>Where to Start</h2>
             <p>Before doing anything else, it's important to import the authentication strategies you want to use in your application. 
               These strategies are available in the Strategies tab.</p> 

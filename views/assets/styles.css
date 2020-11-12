@@ -260,3 +260,16 @@ code {
 .funcCode {
   color: yellow;
 }
+
+#sessionLink {
+  color: white;
+  text-decoration: underline;
+}
+
+#sessionLink:visited {
+  color: white;
+}
+
+#sessionLink:hover {
+  color: #8200B7;
+}
