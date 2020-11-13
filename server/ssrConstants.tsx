@@ -18,7 +18,7 @@ import Middleware from "../views/assets/writing/Middleware.tsx";
 const hydratePath: string = '/hydration.js';
 
 // Static HTML -- includes references to hydration script and CSS stylesheet
-const html: string = `<html lang="en"><head><script type="module" src="${hydratePath}"></script><link rel="stylesheet" href="styles.css" type="text/css"><link rel='icon' type='image/png' href='https://i.imgur.com/ALQnrfR.png'><title>Onyx - Authentication Middleware for Deno</title></head><body><div id="root">${(ReactDOMServer as any).renderToString(
+const html: string = `<html lang="en"><head><script type="module" src="${hydratePath}"></script><link rel="stylesheet" href="styles.css" type="text/css"><link rel='icon' type='image/png' href='https://i.imgur.com/ALQnrfR.png'><meta name="viewport" content="width=device-width,initial-scale=1"><title>Onyx - Authentication Middleware for Deno</title></head><body><div id="root">${(ReactDOMServer as any).renderToString(
     <App />
   )}</div></body></html>`;
   
