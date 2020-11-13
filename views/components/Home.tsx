@@ -3,7 +3,7 @@ import { React } from '../../deps.ts';
 const Home = () => {
   return (
     <div className="parentDivs">
-      <header id="onyxLogo"></header>
+      <img id="onyxLogo" alt='Onyx logo' src='https://i.imgur.com/SpM2LDB.png'></img>
       <div id='intro'>
          <p id='subtitle'>Modular authentication middleware for Deno</p>
          <p id='description'>Inspired by Jared Hanson's <a className='homeLinks' href='http://www.passportjs.org/' target='_blank'>Passport.js</a>, 
