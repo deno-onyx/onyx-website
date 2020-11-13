@@ -267,10 +267,6 @@ code {
 }
 
 @media screen and (max-width: 700px) {
-  html {
-    font-size: 1em;
-  }
-
   body {
     background-size: 2000px 1000px;
   }
@@ -336,13 +332,17 @@ code {
     margin-bottom: 125px;
   }
 
+  #intro {
+    width: 100%;
+  }
+
   #subtitle {
     text-align: center;
-    width: 50%;
+    width: 90%;
   }
 
   #description {
-    width: 50%;
+    width: 80%;
   }
 
   #docsContainer {
@@ -351,6 +351,10 @@ code {
 
   .stratIntro {
     width: 75%;
+  }
+
+  .strategy {
+    margin-left: 40px;
   }
 
   footer {
