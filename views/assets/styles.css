@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
   background-image: url('https://i.imgur.com/Be896VL.jpg');
@@ -32,11 +32,7 @@ body {
 
 #logo {
   height: 90px;
-  width: 100%;
-  background-image: url('https://i.imgur.com/ALQnrfR.png');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: 90px auto;
+  width: auto;
 }
 
 .buttonDiv {
@@ -131,12 +127,8 @@ footer {
 /* 'Home' component */
 
 #onyxLogo {
-  background-image: url('https://i.imgur.com/SpM2LDB.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 250px auto;
-  height: 100px;
-  width: 300px;
+  height: auto;
+  width: 250px;
   
   padding-bottom: 40px;
 }
@@ -272,4 +264,102 @@ code {
 
 #sessionLink:hover {
   color: #8200B7;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 1em;
+  }
+
+  body {
+    background-size: 2000px 1000px;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBar {
+    flex-direction: row;
+    justify-content: center;
+    width: 1fr;
+    border-right: none;
+    border-bottom: 3px solid #8200B7;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  #logo {
+    height: 75px;
+    width: auto;
+    background-image: url('https://i.imgur.com/ALQnrfR.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: 75px auto;
+
+    margin-right: 30px;
+  }
+
+  .buttonDiv {
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .buttons {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border: 2.2px solid white;
+    border-radius: 40px;
+    font-size: 13pt;
+    color: #8200B7;
+    width: 100%;
+  }
+
+  #started {
+    width: 40%;
+  }
+
+  #mainContainer {
+    width: 100%;
+  }
+
+  .parentDivs {
+    margin-bottom: 125px;
+  }
+
+  #subtitle {
+    text-align: center;
+    width: 50%;
+  }
+
+  #description {
+    width: 50%;
+  }
+
+  #docsContainer {
+    width: 75%;
+  }
+
+  .stratIntro {
+    width: 75%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+  }
+
+  .linkLogos {
+    visibility: hidden;
+  }
 }

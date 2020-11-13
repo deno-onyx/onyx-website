@@ -3,7 +3,7 @@ import { React } from '../../deps.ts';
 const NavBar = (props: any) => {
   return(
       <div className='navBar'>
-        <div id='logo'></div>
+        <img id='logo' alt='Onyx picture logo' src='https://i.imgur.com/ALQnrfR.png'></img>
         <div className='buttonDiv'>
           <div className='buttons' id='navHome' onClick={() => {props.setPage('home')}}>Home</div>
           <div className='buttons' id='navStrategies' onClick={() => {props.setPage('strategies')}}>Strategies</div>
