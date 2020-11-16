@@ -351,8 +351,10 @@ code {
   }
 
   .stratIntro {
+    padding-right: 25px;
     width: 75%;
-    margin-top: 150px;
+    height: 100%;
+    margin-bottom: 40px;
   }
 
   .strategy {
