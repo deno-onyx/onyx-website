@@ -173,6 +173,7 @@ footer {
 
 .homeLinks {
   font-weight: bold;
+  color: white;
 }
 
 .homeLinks:visited {
@@ -321,7 +322,7 @@ code {
   }
 
   #started {
-    width: 40%;
+    visibility: hidden;
   }
 
   #mainContainer {
@@ -351,6 +352,7 @@ code {
 
   .stratIntro {
     width: 75%;
+    margin-top: 150px;
   }
 
   .strategy {
